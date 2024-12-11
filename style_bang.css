@@ -1,0 +1,126 @@
+/* Định dạng cho body của trang */
+body {
+    font-family:'Times New Roman', Times, serif, sans-serif; /* Chọn font chữ dễ đọc */
+    background-color: rgb(239, 195, 227); /* Màu nền nhẹ nhàng cho toàn bộ trang */
+    color: #333; /* Màu chữ đen tối để dễ đọc */
+}
+
+/* Định dạng cho container chính */
+.container {
+    width: 80%; /* Chiều rộng của phần tử container chiếm 80% màn hình */
+    margin: 0 auto; /* Căn giữa container */
+    padding: 20px; /* Thêm khoảng cách xung quanh nội dung */
+    background-color: #f6e3f0; /* Màu nền trắng */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng mờ xung quanh */
+    border-radius: 8px; /* Bo tròn góc của container */
+}
+
+/* Định dạng cho tiêu đề */
+h1 {
+    text-align: center; /* Căn giữa tiêu đề */
+    font-size: 70px; /* Kích thước chữ lớn */
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+}
+
+/* Định dạng cho form tìm kiếm */
+.search-form {
+    display: flex; /* Dùng flex để các phần tử trong form xếp theo chiều ngang */
+    justify-content: space-between; /* Phân bố không gian giữa các phần tử */
+    align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+    margin-bottom: 20px; /* Khoảng cách dưới form tìm kiếm */
+}
+/*Ô tìm kiếm sinh viên*/
+.search-input {
+    width: 70%; /* Chiều rộng của ô input chiếm 70% */
+    padding: 8px; /* Thêm khoảng cách bên trong ô input */
+    font-size: 1rem; /* Kích thước chữ trong ô input */
+    border: 1px solid #ddd; /* Viền mỏng màu xám cho ô input */
+    border-radius: 4px; /* Bo tròn góc ô input */
+}
+
+.search-btn {
+    padding: 8px 16px; /* Thêm khoảng cách cho nút tìm kiếm */
+    font-size: 1rem; /* Kích thước chữ cho nút tìm kiếm */
+    border: none; /* Không viền cho nút tìm kiếm */
+    background-color: #4CAF50; /* Màu nền xanh lá cho nút tìm kiếm */
+    color: white; /* Màu chữ trắng */
+    border-radius: 4px; /* Bo tròn góc cho nút */
+    cursor: pointer; /* Thêm hiệu ứng con trỏ khi hover */
+}
+
+.search-btn:hover {
+    background-color: #45a049; /* Màu nền của nút thay đổi khi di chuột vào */
+}
+
+.btn-add {
+    padding: 8px 16px; /* Thêm khoảng cách cho nút "Thêm sinh viên" */
+    font-size: 1rem; /* Kích thước chữ cho nút "Thêm sinh viên" */
+    background-color: #008CBA; /* Màu nền xanh dương cho nút */
+    color: white; /* Màu chữ trắng */
+    text-decoration: none; /* Xóa gạch chân cho liên kết */
+    border-radius: 4px; /* Bo tròn góc cho nút */
+}
+
+.btn-add:hover {
+    background-color: #007B9A; /* Màu nền của nút thay đổi khi hover */
+}
+
+/* Định dạng cho bảng */
+table {
+    width: 100%; /* Bảng chiếm hết chiều rộng của phần tử cha */
+    border-collapse: collapse; /* Xóa khoảng cách giữa các ô */
+    margin-top: 20px; /* Khoảng cách trên bảng */
+    border: 2px solid #447ee3; /* Thêm viền xung quanh bảng */
+}
+
+th, td {
+    padding: 12px; /* Thêm khoảng cách cho ô trong bảng */
+    text-align: left; /* Canh trái nội dung trong các ô */
+    border-bottom: 2px solid #447ee3; /* Thêm đường viền dưới mỗi ô */
+    border-right: 1px solid #447ee3; /* Viền dọc cho các ô */
+    text-align: center;
+}
+
+th {
+    background-color: #3c8be0; /* Màu nền cho tiêu đề bảng */
+    color: white;
+    text-transform: uppercase; /* Chuyển chữ trong dòng đầu tiên thành in hoa */
+
+}
+
+td {
+    background-color: #fff; /* Màu nền trắng cho các ô dữ liệu */
+}
+
+td a {
+    padding: 6px 12px; /* Thêm khoảng cách cho các liên kết trong bảng */
+    margin-right: 8px; /* Khoảng cách giữa các liên kết */
+    text-decoration: none; /* Xóa gạch chân cho liên kết */
+    border-radius: 4px; /* Bo tròn góc cho liên kết */
+    font-size: 1rem; /* Kích thước chữ cho liên kết */
+}
+
+.btn {
+    background-color: #4CAF50; /* Màu nền xanh lá cho nút Sửa */
+    color: white; /* Màu chữ trắng */
+}
+
+.btn:hover {
+    background-color: #45a049; /* Màu nền thay đổi khi hover vào nút Sửa */
+}
+
+.btn-delete {
+    background-color: #f44336; /* Màu nền đỏ cho nút Xóa */
+    color: white; /* Màu chữ trắng */
+}
+
+.btn-delete:hover {
+    background-color: #e53935; /* Màu nền thay đổi khi hover vào nút Xóa */
+}
+
+/* Hiển thị khi không có sinh viên nào */
+td[colspan="8"] {
+    text-align: center; /* Căn giữa văn bản */
+    font-style: italic; /* Chữ nghiêng */
+    color: #777; /* Màu xám nhạt */
+}
